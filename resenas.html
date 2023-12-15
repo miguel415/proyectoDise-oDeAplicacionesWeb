@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tu Página - Reseñas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilo personalizado para la sección de reseñas */
+    body, html {
+      height: 100%;
+      background-image: url('medicos.jpg');
+    }
+
+    /* Fondo blanco detrás de la sección de reseñas */
+    .fondo-blanco {
+      background-color: rgba(255, 255, 255, 0.8); /* Color blanco con transparencia */
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .seccion-reseñas {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      margin: auto;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      background-color: white;
+    }
+
+    /* Estilo para los botones y otros elementos */
+    .btn-primary,
+    .btn-success,
+    .btn-block,
+    .form-control,
+    .card-title,
+    .card-text,
+    .text-success {
+      color: #2b5e2a;
+    }
+
+    .btn-primary,
+    .btn-success {
+      color:white;
+      background-color: #2b5e2a;
+      border-color: #2b5e2a;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Fondo blanco detrás de la sección de reseñas -->
+<div class="fondo-blanco"></div>
+
+<!-- Sección de reseñas flotante -->
+<div class="position-fixed top-50 start-50 translate-middle seccion-reseñas">
+  <div class="container">
+    <h2 class="text-center text-success mb-4">Reseñas de Usuarios</h2>
+
+    <!-- Lista de reseñas -->
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title nombre-usuario">Usuario 1</h5>
+        <p class="card-text texto-reseña">¡Excelente servicio! Recomendado al 100%.</p>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title nombre-usuario">Usuario 2</h5>
+        <p class="card-text texto-reseña">Muy buena experiencia, personal muy amable.</p>
+      </div>
+    </div>
+
+    <!-- Formulario para agregar reseñas -->
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-success mb-4">Deja tu reseña</h3>
+        <form action="#" method="post">
+          <div class="form-group">
+            <textarea name="resena" class="form-control" placeholder="Escribe tu reseña aquí" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success btn-block">Enviar reseña</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

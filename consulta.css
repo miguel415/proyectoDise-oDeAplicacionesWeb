@@ -1,0 +1,45 @@
+#floating-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  width: 80%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3%;
+}
+
+/* Centrar la imagen */
+#floating-form img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Fondo de la página */
+body {
+  background-image: url("medicos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-primary,
+.btn-success {
+  color: white;
+  background-color: #2b5e2a;
+  border-color: #2b5e2a;
+}
+.btn-primary:hover,
+.btn-success:hover {
+  color: white;
+  background-color: #599b58;
+  border-color: #599b58;
+}
