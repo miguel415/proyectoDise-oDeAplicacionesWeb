@@ -13,13 +13,11 @@
   border-radius: 3%;
 }
 
-/* Centrar la imagen */
 #floating-form img {
   display: block;
   margin: 0 auto;
 }
 
-/* Fondo de la página */
 body {
   background-image: url("medicos.jpg");
   background-size: cover;

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-image: url('medicos.jpg');
+  background-image: url("medicos.jpg");
   background-size: cover;
 }
 
@@ -39,7 +39,7 @@ body {
   color: #5c5f5c;
 }
 
-.dias>div {
+.dias > div {
   background-color: #a5ffc3;
   padding: 10px;
   text-align: center;
@@ -54,7 +54,7 @@ img {
 
 .boton {
   color: rgb(55, 54, 54);
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border-color: #2b5e2a;
   display: block;
   margin: 15px auto;
@@ -66,5 +66,5 @@ img {
 
 .boton:hover {
   background-color: #2b5e2a;
-  border-color: #4CAF50;
+  border-color: #4caf50;
 }

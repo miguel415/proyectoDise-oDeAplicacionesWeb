@@ -9,71 +9,71 @@ body {
     align-items: center;
   }
   .logo {
-    width: 80px; /* Tamaño del logo */
+    width: 80px;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    margin-left: 15px; /* Ajuste de margen izquierdo */
+    margin-left: 15px;
   }
   .menu {
-    font-size: 16px; /* Tamaño del texto del menú */
-    padding: 5px; /* Espaciado del menú */
+    font-size: 16px;
+    padding: 5px;
   }
   .menu img {
-    width: 20px; /* Tamaño del icono */
+    width: 20px;
   }
   .letraGrandeInicio {
-    font-size: 40px; /* Tamaño del texto principal */
-    margin-top: 20px; /* Espacio superior */
+    font-size: 40px;
+    margin-top: 20px;
   }
   .subTituloInicio {
-    font-size: 20px; /* Tamaño del subtítulo */
-    margin-top: 10px; /* Espacio superior */
+    font-size: 20px;
+    margin-top: 10px;
   }
   .botones {
-    margin-top: 10px; /* Espacio superior */
-    gap: 20px; /* Espacio entre botones */
+    margin-top: 10px;
+    gap: 20px;
   }
-  .botonInicio, .botonSuscribete {
-    font-size: 16px; /* Tamaño de texto de botones */
-    padding: 10px 20px; /* Espaciado de botones */
+  .botonInicio,
+  .botonSuscribete {
+    font-size: 16px;
+    padding: 10px 20px;
   }
   .lineas {
-    margin-top: 15px; /* Espacio superior */
-    gap: 10px; /* Espaciado entre líneas */
+    margin-top: 15px;
+    gap: 10px;
   }
   .linea {
-    height: 4px; /* Altura de la línea */
+    height: 4px;
   }
   .o {
-    font-size: 30px; /* Tamaño de la letra "O" */
+    font-size: 30px;
   }
   .contactanos {
-    font-size: 40px; /* Tamaño del texto "Contacta con nosotros" */
-    margin-top: 20px; /* Espacio superior */
+    font-size: 40px;
+    margin-top: 20px;
   }
   .redes img {
-    width: 30px; /* Tamaño de iconos de redes sociales */
-    margin: 5px; /* Espaciado entre iconos */
+    width: 30px;
+    margin: 5px;
   }
   .row-container img {
-    width: 80px; /* Tamaño de imágenes en las secciones */
+    width: 80px;
   }
   .row-container p {
-    font-size: 16px; /* Tamaño del texto en las secciones */
+    font-size: 16px;
   }
   .row-container-especialidades img {
-    width: 150px; /* Tamaño de imágenes en secciones de especialidades */
-    height: 150px; /* Altura de imágenes en secciones de especialidades */
+    width: 150px;
+    height: 150px;
   }
   .row-container-especialidades p {
-    font-size: 24px; /* Tamaño del texto en secciones de especialidades */
+    font-size: 24px;
   }
   footer {
-    font-size: 40px; /* Tamaño del texto del footer */
-    margin-bottom: 20px; /* Espacio inferior */
+    font-size: 40px;
+    margin-bottom: 20px;
   }
 }
-
 
 .logo {
   width: 15%;
@@ -113,6 +113,12 @@ body {
   justify-content: center;
 }
 
+#ayuda:visited,
+#consultas:visited,
+#resenas:visited {
+  color: white;
+}
+
 .resenas {
   margin-left: 10%;
 }
@@ -132,13 +138,6 @@ body {
   color: white;
   align-items: center;
   justify-content: center;
-}
-
-
-
-a:visited {
-  color: white;
-
 }
 
 .logoConsultasReseñas {
@@ -289,13 +288,9 @@ a:visited {
 
 footer {
   margin-bottom: 4%;
-
 }
 
-.cabecera:link {
-  color: #2b5e2a;
-}
-
-.cabecera:visited {
-  color: #2b5e2a;
+.cabecera a {
+  text-decoration: none;
+  color: inherit;
 }
