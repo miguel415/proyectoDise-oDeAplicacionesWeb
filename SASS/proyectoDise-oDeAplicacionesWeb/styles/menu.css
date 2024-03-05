@@ -1,0 +1,104 @@
+body header {
+  z-index: 9999;
+  background-color: #568455;
+  color: white;
+  height: 14%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  body header {
+    flex-direction: column;
+    height: 15%;
+  }
+}
+body header .tituloPrincipal {
+  display: flex;
+  width: 23%;
+  margin-top: 1.3%;
+}
+body header .tituloPrincipal .logo {
+  margin-top: -2.2%;
+  height: 70%;
+  margin-left: 3%;
+}
+@media (max-width: 1000px) {
+  body header .tituloPrincipal .logo {
+    height: 130%;
+    margin-top: 4%;
+  }
+}
+body header .tituloPrincipal .titulo {
+  font-size: 7vh;
+  font-family: "Karantina", "sans-serif";
+  text-shadow: 0vh 4vh 4vh rgba(0, 0, 0, 0.25);
+}
+body header .tituloPrincipal .titulo a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 1000px) {
+  body header .tituloPrincipal .titulo {
+    font-size: 5vh;
+    margin-top: 3%;
+  }
+}
+@media (max-width: 1000px) {
+  body header .tituloPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5%;
+    height: 20%;
+  }
+}
+@media (max-width: 1390px) {
+  body header .tituloPrincipal {
+    width: 100%;
+  }
+}
+body header .eslogan {
+  margin-top: 1.9%;
+  text-shadow: 0vh 4vh 4vh rgba(0, 0, 0, 0.25);
+  margin-right: 10%;
+  font-size: 5vh;
+  font-family: "Karantina", "sans-serif";
+}
+@media (max-width: 1390px) {
+  body header .eslogan {
+    display: none;
+  }
+}
+body header .inicioSesion {
+  display: flex;
+  margin-top: 1.9%;
+}
+body header .inicioSesion img {
+  margin-right: 8vh;
+  height: 5vh;
+  width: 5vh;
+}
+@media (max-width: 1000px) {
+  body header .inicioSesion img {
+    margin-right: 0vh;
+    height: 3.5vh;
+    width: 3.5vh;
+  }
+}
+@media (max-width: 1000px) {
+  body header .inicioSesion {
+    height: 35%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(89, 117, 89);
+  }
+}
+body .subHeader {
+  background-color: white;
+  color: black;
+  padding: 2% 10;
+}/*# sourceMappingURL=menu.css.map */

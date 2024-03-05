@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import '_variables';
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import '_variables';
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $sanSerif;
+    color: $negro;
+    background-image: url(../img/medicos.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .signupFrm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        .volverAtras {
+            width: 7vh;
+        }
+
+        .form {
+            background-color: $blanco;
+            width: 70%;
+            height: 80;
+            max-width: 40em;
+            border-radius: 1.6em;
+            padding: 5% 8%;
+            box-shadow: 0 0.625em 1.5em rgba(92, 99, 105, 0.2);
+
+            .imageContainer {
+                display: flex;
+
+                .volverAtras {
+                    justify-content: flex-start;
+                }
+
+                @media screen and (max-width: 1000px) {
+                    .volverAtras {
+                        width: 4vh;
+                    }
+                }
+
+                .tituloPrincipal {
+                    display: flex;
+                    margin-left: 6%;
+                    text-align: center;
+
+                    .logo {
+                        width: 20%;
+                    }
+
+                    .title {
+                        font-size: 200%;
+                        margin-bottom: 2em;
+                        color: $verdeOscuro;
+                    }
+
+                    @media screen and (max-width: 1000px) {
+                        .title {
+                            font-size: 130%;
+                        }
+                    }
+
+                }
+            }
+
+            a:link {
+                color: $verdeOscuro;
+            }
+
+            a:hover {
+                color: $verdeOscuro;
+            }
+
+            a:visited {
+                color: $verde;
+            }
+
+            @media screen and (max-width: 1000px) {
+                a {
+                    font-size: 80%;
+                }
+            }
+
+            .inputContainer {
+                position: relative;
+                height: 3.125em;
+                margin-bottom: 0.9375em;
+
+                .input {
+                    width: 100%;
+                    height: 100%;
+                    border: 0.0625em solid $verdeOscuro;
+                    border-radius: 0.4375em;
+                    font-size: 1em;
+                    padding: 0 0.9375em;
+                    outline: none;
+                    background: none;
+
+                    &::placeholder {
+                        color: $gris;
+                    }
+
+                    &:focus+.label,
+                    &:not(:placeholder-shown)+.label {
+                        top: -0.75em;
+                        font-size: 0.8em;
+                        background-color: $blanco;
+                        padding: 0 0.3125em;
+                        color: $verdeOscuro;
+                    }
+
+                    &:focus {
+                        border: 0.125em solid $verdeOscuro;
+                    }
+                }
+
+                .label {
+                    position: absolute;
+                    top: -0.75em;
+                    left: 0.9375em;
+                    font-size: 0.8em;
+                    color: $verdeOscuro;
+                    transition: 0.3s ease-out;
+                    background-color: $blanco;
+                    padding: 0 0.3125em;
+                }
+            }
+
+            .submitBtn {
+                display: block;
+                margin-left: auto;
+                padding: 0.625em 1.25em;
+                border: none;
+                background-color: $verdeOscuro;
+                color: $blanco;
+                border-radius: 0.375em;
+                cursor: pointer;
+                font-size: 1em;
+                margin-top: 1.25em;
+
+                &:hover {
+                    background-color: $verde;
+                    transform: translateY(-0.25em);
+                }
+            }
+
+        }
+    }
+}

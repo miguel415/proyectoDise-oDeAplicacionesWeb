@@ -1,0 +1,144 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  margin-top: -2%;
+  font-family: "Karantina";
+  font-size: 110%;
+  overflow: hidden;
+}
+
+.contacto {
+  width: 80%;
+  max-width: 600px;
+  margin: 70px auto;
+  padding: 6%;
+}
+.contacto .redes-sociales {
+  text-align: center;
+  margin-top: 2%;
+}
+.contacto .redes-sociales img {
+  width: 5%;
+  margin: 0 2%;
+}
+.contacto .info-contacto {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 120%;
+}
+.contacto h2 {
+  text-align: center;
+  font-size: 200%;
+}
+.contacto form {
+  background-color: white;
+  padding: 2%;
+  border-radius: 8px;
+}
+.contacto form .form-group {
+  margin-bottom: 2%;
+}
+.contacto form label {
+  font-weight: bold;
+  font-size: 130%;
+}
+.contacto form input[type=text],
+.contacto form input[type=email],
+.contacto form textarea {
+  width: 100%;
+  padding: 2%;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-size: 110%;
+}
+.contacto form button {
+  font-family: "Karantina";
+  width: 105%;
+  padding: 2%;
+  border: none;
+  border-radius: 4px;
+  background-color: #568455;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 130%;
+}
+.contacto form button:hover {
+  background-color: #2b5e2a;
+}
+
+@media screen and (max-width: 1000px) {
+  .contacto {
+    width: 80%;
+    max-width: 90%;
+    padding: 6%;
+    margin-top: 30%;
+  }
+  .contacto .redes-sociales {
+    margin-top: 4%;
+  }
+  .contacto .redes-sociales img {
+    width: 8%;
+    margin: 0 4%;
+  }
+  .contacto .info-contacto {
+    margin-top: 4%;
+    font-size: 250%;
+  }
+  .contacto h2 {
+    font-size: 450%;
+  }
+  .contacto form {
+    padding: 4%;
+  }
+  .contacto form label {
+    font-size: 250%;
+  }
+  .contacto form input[type=text],
+  .contacto form input[type=email],
+  .contacto form textarea {
+    font-size: 220%;
+  }
+  .contacto form button {
+    font-size: 270%;
+    padding: 3%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contacto {
+    width: 80%;
+    max-width: 90%;
+    padding: 6%;
+    margin-top: 30%;
+  }
+  .contacto .redes-sociales {
+    margin-top: 4%;
+  }
+  .contacto .redes-sociales img {
+    width: 8%;
+    margin: 0 4%;
+  }
+  .contacto .info-contacto {
+    margin-top: 4%;
+    font-size: 100%;
+  }
+  .contacto h2 {
+    font-size: 140%;
+  }
+  .contacto form {
+    padding: 4%;
+  }
+  .contacto form label {
+    font-size: 100%;
+  }
+  .contacto form input[type=text],
+  .contacto form input[type=email],
+  .contacto form textarea {
+    font-size: 80%;
+  }
+  .contacto form button {
+    font-size: 100%;
+    padding: 3%;
+  }
+}/*# sourceMappingURL=contacto.css.map */

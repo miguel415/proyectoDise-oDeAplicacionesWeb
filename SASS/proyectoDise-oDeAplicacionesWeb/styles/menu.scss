@@ -1,0 +1,109 @@
+@import '_variables';
+
+body {
+    header {
+        z-index: 9999;
+        background-color: $verde;
+        color: $blanco;
+        height: 14%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+            height: 15%;
+        }
+
+        .tituloPrincipal {
+            display: flex;
+            width: 23%;
+            margin-top: 1.3%;
+
+            .logo {
+                margin-top: -2.2%;
+                height: 70%;
+                margin-left: 3%;
+
+                @media (max-width: 1000px) {
+                    height: 130%;
+                    margin-top: 4%;
+                }
+            }
+
+            .titulo {
+                font-size: 7vh;
+                font-family: $karantina, $sanSerif;
+                text-shadow: 0vh 4vh 4vh rgba(0, 0, 0, 0.25);
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                @media (max-width: 1000px) {
+                    font-size: 5vh;
+                    margin-top: 3%;
+                }
+            }
+
+            @media (max-width: 1000px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: -5%;
+                height: 20%;
+            }
+
+            @media (max-width:1390px) {
+                width: 100%;
+            }
+        }
+
+        .eslogan {
+            margin-top: 1.9%;
+            text-shadow: 0vh 4vh 4vh rgba(0, 0, 0, 0.25);
+            margin-right: 10%;
+            font-size: 5vh;
+            font-family: $karantina, $sanSerif;
+
+            @media (max-width: 1390px) {
+                display: none;
+            }
+        }
+
+        .inicioSesion {
+            display: flex;
+            margin-top: 1.9%;
+
+            img {
+                margin-right: 8vh;
+
+                @media (max-width: 1000px) {
+                    margin-right: 0vh;
+                    height: 3.5vh;
+                    width: 3.5vh;
+                }
+
+                height: 5vh;
+                width: 5vh;
+            }
+
+            @media (max-width: 1000px) {
+                height: 35%;
+                align-items: center;
+                justify-content: space-around;
+                background-color: $verdeGris;
+            }
+        }
+    }
+
+    .subHeader {
+        background-color: $blanco;
+        color: $negro;
+        padding: 2% 10
+    }
+}
