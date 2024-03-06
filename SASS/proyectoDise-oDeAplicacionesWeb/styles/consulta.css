@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body .background-image,
+html .background-image {
+  background-image: url("../img/medicosConsulta.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .background-image .container,
+html .background-image .container {
+  color: #2b5e2a;
+  max-width: 600px;
+  width: 80%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}/*# sourceMappingURL=consulta.css.map */

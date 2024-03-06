@@ -1,20 +1,26 @@
 @import '_variables';
 
 
-body, html {
+body,
+html {
+    background-image: URL("../img/medicosCarrusel.jpg");
+    background-position: center;
+    background-repeat: cover;
     margin: 0;
     padding: 0;
     margin-top: -2%;
     font-family: $karantina;
     font-size: 110%;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .contacto {
+    background-color: $blanco;
     width: 80%;
     max-width: 600px;
-    margin: 70px auto;
+    margin: 90px auto;
     padding: 6%;
+
 
     .redes-sociales {
         text-align: center;
@@ -25,6 +31,7 @@ body, html {
             margin: 0 2%;
         }
     }
+
     .info-contacto {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
@@ -50,6 +57,7 @@ body, html {
             font-weight: bold;
             font-size: 130%;
         }
+
         input[type="text"],
         input[type="email"],
         textarea {
@@ -81,41 +89,43 @@ body, html {
 
 @media screen and (max-width: 1000px) {
     .contacto {
-        
+
         width: 80%;
         max-width: 90%;
         padding: 6%;
         margin-top: 30%;
+
         .redes-sociales {
             margin-top: 4%;
-    
+
             img {
                 width: 8%;
                 margin: 0 4%;
             }
         }
+
         .info-contacto {
             margin-top: 4%;
             font-size: 250%;
         }
-    
+
         h2 {
             font-size: 450%;
         }
-    
+
         form {
             padding: 4%;
-    
+
             label {
                 font-size: 250%;
             }
-    
+
             input[type="text"],
             input[type="email"],
             textarea {
                 font-size: 220%;
             }
-    
+
             button {
                 font-size: 270%;
                 padding: 3%;
@@ -123,43 +133,46 @@ body, html {
         }
     }
 }
+
 @media screen and (max-width: 800px) {
     .contacto {
-        
+
         width: 80%;
         max-width: 90%;
         padding: 6%;
         margin-top: 30%;
+
         .redes-sociales {
             margin-top: 4%;
-    
+
             img {
                 width: 8%;
                 margin: 0 4%;
             }
         }
+
         .info-contacto {
             margin-top: 4%;
             font-size: 100%;
         }
-    
+
         h2 {
             font-size: 140%;
         }
-    
+
         form {
             padding: 4%;
-    
+
             label {
                 font-size: 100%;
             }
-    
+
             input[type="text"],
             input[type="email"],
             textarea {
                 font-size: 80%;
             }
-    
+
             button {
                 font-size: 100%;
                 padding: 3%;

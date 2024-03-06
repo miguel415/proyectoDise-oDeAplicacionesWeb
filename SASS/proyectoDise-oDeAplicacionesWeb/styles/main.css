@@ -4,34 +4,35 @@ body {
   padding: 0;
   font-family: "Karantina", sans-serif;
 }
-body main {
+body .contenedor {
+  margin-top: 2%;
   background-color: rgb(214, 214, 214);
-  background-size: cover;
-  background-position: center;
   text-align: center;
   min-height: 100vh;
-  display: flex;
-}
-body main .contenedor {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-body main .contenedor .titulo {
+body .contenedor .titulo {
   flex: 1;
   width: 50%;
   text-align: center;
 }
-body main .contenedor .titulo p {
+body .contenedor .titulo p {
   margin-left: 19%;
   width: 60%;
   color: #2b5e2a;
   font-size: 350%;
 }
-body main .contenedor .titulo img {
+body .contenedor .titulo img {
   width: 10%;
 }
-body main .contenedor .slide {
+@media screen and (max-width: 1000px) {
+  body .contenedor .slide {
+    display: none;
+  }
+}
+body .contenedor .slide {
   margin-top: 2%;
   margin-right: 3%;
   flex: 1;
@@ -39,27 +40,27 @@ body main .contenedor .slide {
   position: relative;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
 }
-body main .contenedor .slide .slide-inner {
+body .contenedor .slide .slide-inner {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: calc(300px + 3em);
 }
-body main .contenedor .slide .slide-inner .slide-open:checked + .slide-item {
+body .contenedor .slide .slide-inner .slide-open:checked + .slide-item {
   position: static;
   opacity: 100;
 }
-body main .contenedor .slide .slide-inner .slide-item {
+body .contenedor .slide .slide-inner .slide-item {
   position: absolute;
   opacity: 0;
   transition: opacity 0.6s ease-out;
 }
-body main .contenedor .slide .slide-inner .slide-item img {
+body .contenedor .slide .slide-inner .slide-item img {
   display: block;
   height: auto;
   max-width: 100%;
 }
-body main .contenedor .slide .slide-inner .slide-control {
+body .contenedor .slide .slide-inner .slide-control {
   background: rgba(0, 0, 0, 0.28);
   border-radius: 50%;
   color: white;
@@ -77,22 +78,22 @@ body main .contenedor .slide .slide-inner .slide-control {
   width: 40px;
   z-index: 10;
 }
-body main .contenedor .slide .slide-inner .prev {
+body .contenedor .slide .slide-inner .prev {
   left: 2%;
 }
-body main .contenedor .slide .slide-inner .next {
+body .contenedor .slide .slide-inner .next {
   right: 2%;
 }
-body main .contenedor .slide .slide-inner .slide-control:hover {
+body .contenedor .slide .slide-inner .slide-control:hover {
   background: rgba(0, 0, 0, 0.8);
   color: grey;
 }
-body main .contenedor .slide .slide-inner #slide-1:checked ~ .control-1,
-body main .contenedor .slide .slide-inner #slide-2:checked ~ .control-2,
-body main .contenedor .slide .slide-inner #slide-3:checked ~ .control-3 {
+body .contenedor .slide .slide-inner #slide-1:checked ~ .control-1,
+body .contenedor .slide .slide-inner #slide-2:checked ~ .control-2,
+body .contenedor .slide .slide-inner #slide-3:checked ~ .control-3 {
   display: block;
 }
-body main .contenedor .slide .slide-inner .slide-indicador {
+body .contenedor .slide .slide-inner .slide-indicador {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -103,20 +104,20 @@ body main .contenedor .slide .slide-inner .slide-indicador {
   text-align: center;
   z-index: 10;
 }
-body main .contenedor .slide .slide-inner .slide-indicador .slide-indicador li {
+body .contenedor .slide .slide-inner .slide-indicador .slide-indicador li {
   display: inline-block;
   margin: 0 5px;
 }
-body main .contenedor .slide .slide-inner .slide-circulo {
+body .contenedor .slide .slide-inner .slide-circulo {
   color: grey;
   cursor: pointer;
   display: block;
   font-size: 35px;
 }
-body main .contenedor .slide .slide-inner .slide-circulo:hover {
+body .contenedor .slide .slide-inner .slide-circulo:hover {
   color: rgb(214, 214, 214);
 }
-body main .contenedor .slide .slide-inner #titulo {
+body .contenedor .slide .slide-inner #titulo {
   width: 100%;
   position: absolute;
   padding: 0px;
@@ -132,11 +133,13 @@ body .bordered {
   border-bottom: 4px solid #2b5e2a;
 }
 body .row-container {
+  font-size: 150%;
   display: flex;
   margin-top: 3.5%;
   margin-bottom: 2.5%;
 }
 body .row-container .col-container1 {
+  margin-left: 1%;
   justify-content: flex-start;
   text-align: center;
 }
@@ -158,6 +161,7 @@ body .row-container .col-container3 img {
   width: 20%;
 }
 body .row-container-especialidades {
+  font-size: 250%;
   background-color: rgb(214, 214, 214);
   display: flex;
   justify-content: space-around;

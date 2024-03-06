@@ -1,0 +1,31 @@
+.caja {
+    display: grid;
+    grid-template-rows: 4fr;
+    height: 523px;
+    background-image: url("medicosGris.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 8px solid #2b5e2a;
+}
+
+.caja1 {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    text-align: center;
+
+
+.caja1 img {
+    max-width: 40%;
+    max-height: 40%;
+    justify-self: center;
+    align-self: center;
+    margin-top: -3%;
+}
+
+.caja1 p {
+    color: #2b5e2a;
+    font-size: 700%;
+    margin-top: -12%;
+    font-family: "Karantina", sans-serif;
+}}

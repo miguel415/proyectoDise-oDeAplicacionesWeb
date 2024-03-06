@@ -1,0 +1,35 @@
+@import "_variables";
+body,
+html {
+    margin: 0;
+    padding: 0;
+
+
+    .background-image {
+        background-image: url("../img/medicosConsulta.jpeg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .container {
+            color:$verdeOscuro;
+            max-width: 600px;
+            width: 80%;
+            background-color: $blanco;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}

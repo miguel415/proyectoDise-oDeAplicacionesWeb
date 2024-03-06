@@ -1,4 +1,8 @@
-body, html {
+body,
+html {
+  background-image: URL("../img/medicosCarrusel.jpg");
+  background-position: center;
+  background-repeat: cover;
   margin: 0;
   padding: 0;
   margin-top: -2%;
@@ -8,9 +12,10 @@ body, html {
 }
 
 .contacto {
+  background-color: white;
   width: 80%;
   max-width: 600px;
-  margin: 70px auto;
+  margin: 90px auto;
   padding: 6%;
 }
 .contacto .redes-sociales {

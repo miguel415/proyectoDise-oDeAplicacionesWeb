@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+@import "_variables";
+
+body {
+    background-color: $grisClaro;
+
+    header {
+        .tituloPrincipal {
+            .titulo {
+                margin-top: -3.5%;
+            }
+        }
+
+        .eslogan {
+            margin-top: 8%;
+        }
+    }
+
+    main {
+        padding: 20px;
+        margin-top: 9%;
+
+        #reseñas {
+            h2 {
+                text-align: center;
+                border-bottom: 4px solid $verdeOscuro;
+            }
+
+            .reseña {
+                margin-top: 10%;
+                margin-bottom: 10%;
+                border-bottom: 4px solid $verdeOscuro;
+
+                h3 {
+                    font-family: $karantina;
+                    font-size: 300%;
+                    margin-bottom: 5%;
+                    color: $verdeOscuro;
+                }
+
+                iframe {
+                    width: 100%;
+                    height: 300px;
+                    border: none;
+                    margin-bottom: 5%;
+                }
+
+                p {
+                    margin-bottom: 10%;
+                }
+            }
+        }
+
+        #formulario {
+            h2 {
+                margin-top: 6%;
+                margin-bottom: 6%;
+                text-align: center;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"],
+            textarea {
+                width: 98%;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            button {
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+
+
+
+    @media only screen and (max-width: 768px) {
+        main {
+            padding: 10px;
+
+            .reseña {
+                iframe {
+                    height: 200px;
+                }
+            }
+
+            input[type="text"],
+            textarea {
+                padding: 5px;
+                font-size: 14px;
+            }
+
+            button {
+                padding: 8px 15px;
+            }
+        }
+    }
+}
