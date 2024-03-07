@@ -1,31 +1,45 @@
+@import "_variables";
+header {
+    .tituloPrincipal {
+        .titulo {
+            margin-top: -3.5%;
+        }
+    }
+
+    .eslogan {
+        margin-top: 8%;
+    }
+}
 .caja {
     display: grid;
     grid-template-rows: 4fr;
     height: 523px;
-    background-image: url("medicosGris.jpg");
+    background-image: url("../img/medicosGris.png");
     background-size: cover;
     background-position: center;
-    border-bottom: 8px solid #2b5e2a;
+    border-bottom: 8px solid $verdeOscuro;
+
+
+    .caja1 {
+        display: grid;
+        place-items: center;
+        height: 100%;
+        text-align: center;
+
+
+        img {
+            max-width: 40%;
+            max-height: 40%;
+            justify-self: center;
+            align-self: center;
+            margin-top: -3%;
+        }
+
+        p {
+            color: $verdeOscuro;
+            font-size: 400%;
+            margin-top: -12%;
+            font-family: $karantina;
+        }
+    }
 }
-
-.caja1 {
-    display: grid;
-    place-items: center;
-    height: 100%;
-    text-align: center;
-
-
-.caja1 img {
-    max-width: 40%;
-    max-height: 40%;
-    justify-self: center;
-    align-self: center;
-    margin-top: -3%;
-}
-
-.caja1 p {
-    color: #2b5e2a;
-    font-size: 700%;
-    margin-top: -12%;
-    font-family: "Karantina", sans-serif;
-}}

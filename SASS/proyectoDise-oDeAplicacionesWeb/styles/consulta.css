@@ -4,12 +4,14 @@ html {
   margin: 0;
   padding: 0;
 }
-body .background-image,
-html .background-image {
+body .yo-background-image,
+html .yo-background-image {
   background-image: url("../img/medicosConsulta.jpeg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+}
+body .background-image,
+html .background-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,9 +22,23 @@ html .background-image .container {
   max-width: 600px;
   width: 80%;
   background-color: white;
-  padding: 10px;
+  padding: 72px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+body .background-image .container .titulo,
+html .background-image .container .titulo {
+  display: flex;
+  justify-content: flex-start;
+}
+body .background-image .container .titulo a,
+html .background-image .container .titulo a {
+  width: 25%;
+}
+body .background-image .container .titulo a img,
+html .background-image .container .titulo a img {
+  width: 30%;
+  height: auto;
 }
 
 /* Estilos para dispositivos móviles */

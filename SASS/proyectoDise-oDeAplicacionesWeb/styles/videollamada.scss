@@ -1,0 +1,66 @@
+@import "_variables";
+
+body {
+    background-color: $negro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.videollamada {
+    background-color: $grisOscuro;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .loading-circle {
+        width: 70px;
+        height: 70px;
+        background-color: transparent;
+        border: 3px solid #fff;
+        border-top: 3px solid transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        position: absolute;
+        top: 40%;
+        left: 47.5%;
+    }
+    
+
+    .hang-up-button {
+        padding: 10px 20px;
+        background-color: $grisOscuro;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 5px;
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin-top: auto; /* Empuja los botones hacia la parte inferior */
+    }
+
+    img {
+        width: 50px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}

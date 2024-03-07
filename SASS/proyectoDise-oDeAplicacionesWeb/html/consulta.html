@@ -10,10 +10,13 @@
 
 </head>
 
-<body>
+<body class="yo-background-image">
     <div class="background-image">
         <div class="container">
-            <h1 class="text-center mb-4">Consulta Médica</h1>
+            <div class="titulo">
+                <a href="#" onclick="history.back()"><img src="../img/flecha-pequena-izquierda.png" /></a>
+                <h2 class="text-center mb-4">Consulta Médica</h2>
+            </div>
             <form id="consultaForm">
                 <div class="form-group">
                     <label for="specialist">Especialista:</label>
@@ -47,7 +50,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary btn-block"
                     style="border-color:#2b5e2a; background-color: #568455; color: white;">Enviar Consulta</button>
-                <a href="#" onclick="history.back()" class="btn btn-secondary btn-block mt-2">Volver Atrás</a>
+
             </form>
         </div>
     </div>

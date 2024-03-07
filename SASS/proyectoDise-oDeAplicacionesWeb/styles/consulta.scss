@@ -4,12 +4,13 @@ html {
     margin: 0;
     padding: 0;
 
-
-    .background-image {
+    .yo-background-image {
         background-image: url("../img/medicosConsulta.jpeg");
         background-size: cover;
         background-position: center;
-        height: 100vh;
+    }
+
+    .background-image {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,9 +21,20 @@ html {
             max-width: 600px;
             width: 80%;
             background-color: $blanco;
-            padding: 10px;
+            padding: 72px;
             border-radius: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            .titulo {
+                display: flex;
+                justify-content: flex-start;
+                a {
+                    width: 25%;
+                    img {
+                        width: 30%;
+                        height: auto;
+                    }
+                }
+            }
         }
     }
 }
