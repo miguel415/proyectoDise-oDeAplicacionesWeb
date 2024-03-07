@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaludActiva</title>
+    <link rel="stylesheet" href="../styles/formulario.css" /> <!-- Asegúrate de que esta ruta sea la correcta -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+</head>
+
+<body>
+    <div class="signupFrm">
+        <form action="" class="form">
+            <div class="imageContainer">
+                <a href="index.html"><img class="volverAtras" src="../img/flecha-pequena-izquierda.png" /></a>
+                <div class="tituloPrincipal">
+                    <img src="../img/Logo.png" class="title logo" />
+                    <a href="index.html">
+                        <div class="title">SaludActiva</div>
+                    </a>
+                </div>
+            </div>
+            <div class="inputContainer">
+                <input type="text" class="input" placeholder="Example@gmail.com" name="email" />
+                <label for="" class="label">Email</label>
+              </div>
+      
+              <div class="inputContainer">
+                <input type="password" class="input" placeholder="Contraseña..." name="password" />
+                <label for="" class="label">Contraseña</label>
+              </div>
+      
+              <div class="inputContainer">
+                <input type="password" class="input" placeholder="Confirmar contraseña..." name="confirmPassword" />
+                <label for="" class="label">Confirmar contraseña</label>
+              </div>
+              <div class="inputContainer">
+                <input type="text" class="input" placeholder="DNI..." name="confirmPassword" />
+                <label for="" class="label">DNI</label>
+              </div>
+      
+              <div class="inputContainer">
+                <input type="text" class="input" placeholder="Número..." id="card-number" />
+                <label for="" class="label">Número de tarjeta de crédito</label>
+              </div>
+              <div class="separador">
+              <div class="inputContainer" style="width: 25%;">
+                <input type="text" class="input" placeholder="CVC" id="card-cvc" />
+                <label for="" class="label">CVC</label>
+              </div>
+              <div class="inputContainer" style="width: 70%;">
+                <input type="text" class="input" placeholder="MM/YY" id="card-expiry" />
+                <label for="" class="label">Expiration Date</label>
+              </div>
+
+            <input type="submit" class="submitBtn" value="Registrarse" />
+
+            <a href="inicioSesion.html" class="notRegistered">¿Ya tienes una cuenta? Inicia sesión</a>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -64,7 +64,7 @@ body .signupFrm .form a:hover {
   color: #2b5e2a;
 }
 body .signupFrm .form a:visited {
-  color: #568455;
+  color: #2b5e2a;
 }
 @media screen and (max-width: 1000px) {
   body .signupFrm .form a {
